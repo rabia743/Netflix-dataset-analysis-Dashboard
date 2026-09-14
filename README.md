@@ -1,5 +1,5 @@
 
-<h1 align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png" alt="Netflix Logo" width="120"/> <br> Netflix Dataset Anlysis</h1><p align="center"> <em>📊 Data Analysis • 🎬 5,087 Titles • 🎥 3,759 Movies • 📺 2,058 TV Shows</em> </p><hr>
+<h1 align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png" alt="Netflix Logo" width="120"/> <br> Netflix Dataset Analysis</h1><p align="center"> <em>📊 Data Analysis • 🎬 5,087 Titles • 🎥 3,759 Movies • 📺 2,058 TV Shows</em> </p><hr>
 
 📌 Overview
 An end-to-end Data Analysis, Machine Learning Preprocessing & Visualization Dashboard built on a Netflix Movies & TV Shows dataset containing 5,087 titles spanning from 1945 to 2022.
