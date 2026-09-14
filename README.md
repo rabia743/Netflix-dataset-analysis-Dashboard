@@ -95,9 +95,6 @@ Longest movies (e.g., The School of Mischief – 251 min)
 
 Highest rated content (No Longer Kids – 9.0 IMDb)
 
-🎨 Dashboard Preview
-https://via.placeholder.com/900x450?text=Netflix+Interactive+Dashboard
-
 Interactive elements:
 
 🎚️ Dropdown filters (Type, Country, Genre)
@@ -157,7 +154,7 @@ netfl[numeric_cols] = scaler.fit_transform(netfl[numeric_cols])
 🚀 How to Run
 bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/netflix-dashboard.git
+git clone https://github.com/rabia743/netflix-dashboard.git
 
 # 2. Navigate into project
 cd netflix-dashboard
