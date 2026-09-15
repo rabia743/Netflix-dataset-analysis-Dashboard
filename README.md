@@ -25,7 +25,7 @@ Data Handling :	Pandas, NumPy
 
 Visualization	: Matplotlib, Seaborn
 
-Dashboard	: Streamlit / Plotly Dash
+Dashboard	: Html, CSS and Basic javascript
 
 Machine Learning	: Scikit-learn (LabelEncoder, OneHotEncoder, StandardScaler)
 
@@ -170,6 +170,20 @@ python "machine learning.py"
 
 # 6. Open the dashboard in your browser
  http://localhost:8000/dashboard/table.html
+
+ This is overview of my Netflix dashborad on webpage
+
+ <img width="960" height="504" alt="Image" src="https://github.com/user-attachments/assets/13ae26da-ae3c-4318-94de-614722ca505c" />
+
+
+ <img width="960" height="504" alt="Image" src="https://github.com/user-attachments/assets/cfca9891-3012-4bd8-b842-87d75b09ba3b" />
+
+
+ <img width="960" height="504" alt="Image" src="https://github.com/user-attachments/assets/96d6e532-6016-460e-90a3-2eec05797c87" />
+
+
+ <img width="960" height="504" alt="Image" src="https://github.com/user-attachments/assets/ba3284d7-36f7-4664-af52-7aab073351b2" />
+ 
 
 💡 Key Learnings
 Practical data cleaning on messy real-world data (missing IMDb scores, unknown countries)
