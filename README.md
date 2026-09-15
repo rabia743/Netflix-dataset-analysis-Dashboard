@@ -168,9 +168,8 @@ python "filter data.py"
 # 5. Run ML preprocessing
 python "machine learning.py"
 
-# 6. Launch dashboard
-streamlit run dashboard/app.py
-Then open http://localhost:8501 in your browser.
+# 6. Open the dashboard in your browser
+ http://localhost:8000/dashboard/table.html
 
 💡 Key Learnings
 Practical data cleaning on messy real-world data (missing IMDb scores, unknown countries)
@@ -179,11 +178,10 @@ Using explode() and str.get_dummies() for multi-value columns
 
 Handling LabelEncoder, OneHotEncoder, and StandardScaler for ML pipelines
 
-Building interactive dashboards with Streamlit/Plotly
+Building interactive dashboards with html,CSS and Javascrpit
 
 Storytelling with data through visual hierarchy
 
-Deploying dashboards to the cloud (Streamlit Cloud / Heroku)
 
 📌 Dataset Summary
 Metric	Value
