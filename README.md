@@ -1,22 +1,22 @@
 
 <h1 align="center"> <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Netflix-new-icon.png" alt="Netflix Logo" width="120"/> <br> Netflix Dataset Analysis Dashboard</h1><p align="center"> <em>📊 Data Analysis • 🎬 5,087 Titles • 🎥 3,759 Movies • 📺 2,058 TV Shows</em> </p><hr>
 
-📌 Overview
+Overview
 An end-to-end Data Analysis, Machine Learning Preprocessing & Visualization Dashboard built on a Netflix Movies & TV Shows dataset containing 5,087 titles spanning from 1945 to 2022.
 
 This project explores:
 
-🎥 How Netflix's content library evolved over the years
+ How Netflix's content library evolved over the years
 
-🌍 Which countries produce the most content
+ Which countries produce the most content
 
-📺 The balance between Movies and TV Shows
+ The balance between Movies and TV Shows
 
-🎭 Popular genres, ratings, and directors
+ Popular genres, ratings, and directors
 
-⏳ IMDb scores and runtime distributions
+ IMDb scores and runtime distributions
 
-🛠️ Technologies Used
+ Technologies Used
 Category	Tools:
 
 Language	: Python 3.x
@@ -31,27 +31,27 @@ Machine Learning	: Scikit-learn (LabelEncoder, OneHotEncoder, StandardScaler)
 
 Version Control :	Git & GitHub
 
-📂 Project Features:
+ Project Features:
 
-📥 Load raw Netflix dataset (before data.csv)
+ Load raw Netflix dataset (before data.csv)
 
-🧹 Clean missing values, duplicates, and inconsistent formats
+ Clean missing values, duplicates, and inconsistent formats
 
-🔍 Filter Movies and TV Shows into separate datasets
+ Filter Movies and TV Shows into separate datasets
 
-📊 Interactive dashboard with filters (Year, Country, Type, Rating)
+ Interactive dashboard with filters (Year, Country, Type, Rating)
 
-📈 KPI cards: Total Titles, Movies, TV Shows, Countries
+ KPI cards: Total Titles, Movies, TV Shows, Countries
 
-🌍 Country-wise content distribution
+ Country-wise content distribution
 
-🎭 Top genres and directors
+ Top genres and directors
 
-⏳ Content added over time (trend line)
+ Content added over time (trend line)
 
-🤖 Machine Learning preprocessing with LabelEncoder, OneHotEncoder, StandardScaler
+ Machine Learning preprocessing with LabelEncoder, OneHotEncoder, StandardScaler
 
-🧹 Data Cleaning & Preprocessing
+ Data Cleaning & Preprocessing
 Steps performed on the dataset:
 
 Handled missing values in director, cast, country, rating
@@ -80,7 +80,7 @@ movies.csv → Movies-only dataset (3,759 rows)
 
 web_series.csv → TV Shows-only dataset (2,058 rows)
 
-📊 Data Analysis & EDA
+ Data Analysis & EDA
 Key analyses performed:
 
 Content added per year (huge spike post-2015)
@@ -97,24 +97,24 @@ Highest rated content (No Longer Kids – 9.0 IMDb)
 
 Interactive elements:
 
-🎚️ Dropdown filters (Type, Country, Genre)
+ Dropdown filters (Type, Country, Genre)
 
-📅 Year range slider
+ Year range slider
 
-🗺️ Hover-enabled maps
+ Hover-enabled maps
 
-📌 Dynamic KPI cards
+ Dynamic KPI cards
 
-📊 Bar / Pie / Line charts
+ Bar / Pie / Line charts
 
-📈 Movies vs TV Shows
+ Movies vs TV Shows
 Type	Count	Percentage
-🎥 Movies	3,759	~73.9%
-📺 TV Shows	2,058	~26.1%
-📊 Total Titles	5,087	100%
+ Movies	3,759	~73.9%
+ TV Shows	2,058	~26.1%
+ Total Titles	5,087	100%
 Insight: Netflix's library is heavily dominated by Movies (~74%), but TV Shows (~26%) have grown significantly since 2015, especially K-Dramas and Anime.
 
-ℹ️ Note: Total titles count is 5,087 (not 5,806 as in some versions of the dataset), because the raw dataset contains entries where Type is missing or duplicated and were dropped during cleaning. After removing such records and keeping only valid MOVIE and SHOW entries, we get:
+ Note: Total titles count is 5,087 (not 5,806 as in some versions of the dataset), because the raw dataset contains entries where Type is missing or duplicated and were dropped during cleaning. After removing such records and keeping only valid MOVIE and SHOW entries, we get:
 
 Movies (MOVIE type): 3,759
 
@@ -122,16 +122,16 @@ TV Shows (SHOW type): 2,058
 
 Total: 5,087
 
-🤖 Machine Learning Preprocessing
+ Machine Learning Preprocessing
 Using machine learning.py, the dataset is prepared for ML models:
 
-1️⃣ Label Encoding (Type column)
+ Label Encoding (Type column)
 python
 le = LabelEncoder()
 
 netfl["Type_encoded"] = le.fit_transform(netfl["Type"])
 
-2️⃣ One-Hot Encoding (Genres & Countries)
+ One-Hot Encoding (Genres & Countries)
 
 python
 
@@ -141,7 +141,7 @@ countries_onehot = netfl["Production_countries"].str.get_dummies(sep=',')
 
 netfl = pd.concat([netfl, countries_onehot], axis=1)
 
-3️⃣ Feature Scaling (StandardScaler)
+ Feature Scaling (StandardScaler)
 
 python
 numeric_cols = ["Release_Year", "Runtime", "Seasons", "Imdb_votes",
@@ -151,7 +151,7 @@ scaler = StandardScaler()
 
 netfl[numeric_cols] = scaler.fit_transform(netfl[numeric_cols])
 
-🚀 How to Run
+ How to Run
 bash
 # 1. Clone the repository
 git clone https://github.com/rabia743/netflix-dashboard.git
@@ -185,7 +185,7 @@ python "machine learning.py"
  <img width="960" height="504" alt="Image" src="https://github.com/user-attachments/assets/ba3284d7-36f7-4664-af52-7aab073351b2" />
  
 
-💡 Key Learnings
+ Key Learnings
 Practical data cleaning on messy real-world data (missing IMDb scores, unknown countries)
 
 Using explode() and str.get_dummies() for multi-value columns
@@ -197,12 +197,12 @@ Building interactive dashboards with html,CSS and Javascrpit
 Storytelling with data through visual hierarchy
 
 
-📌 Dataset Summary
+ Dataset Summary
 Metric	Value
-📊 Total Titles	5,087
-🎥 Total Movies	3,759
-📺 Total TV Shows	2,058
-🌍 Countries	90+
-🎭 Genres	20+
-📅 Years Covered	1945 – 2022
+ Total Titles	5,087
+ Total Movies	3,759
+ Total TV Shows	2,058
+ Countries	90+
+ Genres	20+
+ Years Covered	1945 – 2022
 
